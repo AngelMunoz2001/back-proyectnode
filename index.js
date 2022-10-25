@@ -44,7 +44,7 @@ app.get('/', (req, res) =>{
 })
 
 //Inicializar servidor
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () =>{
     console.log(`Servidor Corriendo: ${PORT}`)
 })
