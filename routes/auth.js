@@ -93,7 +93,6 @@ router.post('/login', async(req, res) =>{
     })
 }
 
-//Crea un token del usuario
     const token = jwt.sign({
         name: user.name,
         id: user._id
@@ -106,4 +105,11 @@ router.post('/login', async(req, res) =>{
 
 })
 
-module.exports = router
+    /*return res.json({
+        error: null,
+        data: 'bienvenido'
+    })*/
+
+    
+
+    module.exports = router
